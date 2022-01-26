@@ -3,7 +3,7 @@ import {PropTypes} from 'prop-types';
 
 function AgregarProducto({setCategorias}) {
 
-    const [input, setInput] = useState('Ingrese un nuevo Producto');
+    const [input, setInput] = useState();
 
     const handleChange = (e) => {
         setInput(e.target.value);

@@ -13,7 +13,7 @@ const Coleccion = ({categorias}) => {
     const peticion = async () => {
         //const URL = 'https://api.giphy.com/v1/gifs/trending?q=Goku&limit=10&api_key=XfTrLeRLQnMp091kQoOLQXHzHrMs0Cb2'
 
-        const URL = `https://api.giphy.com/v1/gifs/trending?q=${encodeURI(categorias)}&limit=10&api_key=XfTrLeRLQnMp091kQoOLQXHzHrMs0Cb2`
+        const URL = `https://api.giphy.com/v1/gifs/search?q=${encodeURI(categorias)}&limit=10&api_key=XfTrLeRLQnMp091kQoOLQXHzHrMs0Cb2`;
 
 
         const respuesta = await fetch(URL);
